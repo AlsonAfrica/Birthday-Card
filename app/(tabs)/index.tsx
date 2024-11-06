@@ -16,9 +16,10 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+        <ThemedText type="title" style={styles.titleContainer}>Welcome!</ThemedText>
         <HelloWave />
       </ThemedView>
+      {/* <ThemedText style={styles.titleContainer}>Boss Baby</ThemedText> */}
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 1: Try it</ThemedText>
         <ThemedText>
@@ -55,6 +56,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
+    color:"green"
   },
   stepContainer: {
     gap: 8,
@@ -67,4 +69,8 @@ const styles = StyleSheet.create({
     left: 0,
     position: 'absolute',
   },
+  // {
+  //   f
+  // }
 });
+
